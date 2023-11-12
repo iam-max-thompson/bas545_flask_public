@@ -7,7 +7,7 @@ import json
 app = Flask(__name__)
 
 # Load credentials from JSON file
-with open("python_files/my_credentials.json", "r") as f:
+with open("my_credentials.json", "r") as f:
     credentials = json.load(f)
 
 
