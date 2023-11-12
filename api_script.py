@@ -26,6 +26,11 @@ connection = psycopg2.connect(
 cursor = connection.cursor()
 
 
+@app.route("/")
+def hello_world():
+    return "Hello from Flask!"
+
+
 @app.route("/api/data", methods=["GET"])
 def get_data():
     # Fetch data from the database (replace with your SQL query)
